@@ -1,0 +1,67 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+export default function ProgramSection() {
+  const features = [
+    {
+      icon: '👥',
+      title: 'Doelgroep',
+      description: 'Volwassenen vanaf 15 jaar',
+    },
+    {
+      icon: '📊',
+      title: 'Alle Niveaus',
+      description:
+        'Van absolute beginners tot ervaren zwemmers en triatleten. We werken met een beginnersgroep en gevorderden.',
+    },
+    {
+      icon: '👨‍👩‍👧‍👦',
+      title: 'Kleine Groepen',
+      description: 'Maximaal 15 personen per groep voor persoonlijke aandacht',
+    },
+  ]
+
+  return (
+    <section className="py-20 relative" id="programma">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-athletic-dark mb-6">
+            Over het Programma
+          </h2>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            Een gestructureerd programma dat je helpt om je crawltechniek te
+            verbeteren, ongeacht je huidige niveau.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="bg-white rounded-xl p-8 shadow-ocean hover:shadow-athletic transition-all duration-300 hover:scale-105"
+            >
+              <div className="text-5xl mb-4">{feature.icon}</div>
+              <h3 className="text-2xl font-display font-semibold text-athletic-dark mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {feature.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
