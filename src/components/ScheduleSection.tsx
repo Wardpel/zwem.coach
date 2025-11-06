@@ -109,15 +109,6 @@ export default function ScheduleSection() {
                 </p>
               </div>
 
-              <div>
-                <h4 className="font-semibold text-athletic-dark mb-2">
-                  Parkeren
-                </h4>
-                <p className="text-sm bg-gray-50 p-3 rounded-lg italic">
-                  Informatie over parkeermogelijkheden volgt
-                </p>
-              </div>
-
               {/* Map */}
               <div className="mt-6">
                 <h4 className="font-semibold text-athletic-dark mb-3">Kaart</h4>
