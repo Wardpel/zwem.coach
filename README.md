@@ -187,7 +187,6 @@ The project uses an ocean/athletic theme:
 
 For questions or issues:
 
-- Email: your-email@example.com
 - Repository Issues: [GitHub Issues](link-to-issues)
 
 ## License
