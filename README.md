@@ -1,16 +1,16 @@
-# ZWEM.COACH - Start to Crawl Vilvoorde
+# Swimming Coaching Landing Page
 
-Een moderne, one-page landing page voor zwemcoaching programma in Vilvoorde, gebouwd met Next.js 15, Tailwind CSS en Stripe integratie.
+A modern, one-page landing page for swimming coaching programs, built with Next.js 15, Tailwind CSS, and Stripe integration.
 
-## Overzicht
+## Overview
 
-Dit project is een professionele website voor ZWEM.COACH, een crawl zwemprogramma begeleid door Olympisch medaillewinnaar Pieter Timmers en coach Ward Pellegrims. De website biedt informatie over het programma en maakt inschrijving mogelijk via Stripe Payment Links.
+This project is a professional website template for swimming coaching programs. The website provides information about the program and enables registration through Stripe Payment Links.
 
-## Technische Stack
+## Tech Stack
 
 - **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind CSS met ocean/athletic theme
-- **Animaties:** Framer Motion
+- **Styling:** Tailwind CSS with ocean/athletic theme
+- **Animations:** Framer Motion
 - **Testing:** Playwright E2E tests
 - **Code Formatting:** Prettier
 - **Analytics:** Vercel Analytics & Speed Insights
@@ -18,60 +18,60 @@ Dit project is een professionele website voor ZWEM.COACH, een crawl zwemprogramm
 
 ## Features
 
-- 🎨 Moderne, responsieve one-page design
+- 🎨 Modern, responsive one-page design
 - 🌊 Ocean/athletic themed color palette
-- ✨ Smooth animaties met Framer Motion
-- 💳 Stripe Payment Links integratie voor twee groepen
-- 📱 Volledig responsive voor alle apparaten
-- 🧪 Uitgebreide E2E tests met Playwright
-- ⚡ Geoptimaliseerd voor performance en SEO
-- 🎯 Nederlandse content
+- ✨ Smooth animations with Framer Motion
+- 💳 Stripe Payment Links integration for multiple groups
+- 📱 Fully responsive for all devices
+- 🧪 Comprehensive E2E tests with Playwright
+- ⚡ Optimized for performance and SEO
+- 🌍 Easily customizable content
 
-## Installatie
+## Installation
 
-### Vereisten
+### Requirements
 
-- Node.js 18 of hoger
-- npm of yarn
+- Node.js 18 or higher
+- npm or yarn
 
-### Stappen
+### Steps
 
-1. Clone de repository:
+1. Clone the repository:
 
 ```bash
 git clone <repository-url>
 cd zwem.coach
 ```
 
-2. Installeer dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Configureer environment variables (zie hieronder)
+3. Configure environment variables (see below)
 
-4. Start de development server:
+4. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in je browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Environment Variables
 
-Kopieer `.env.example` naar `.env.local`:
+Copy `.env.example` to `.env.local`:
 
 ```bash
 cp .env.example .env.local
 ```
 
-Vul de Stripe Payment Links in:
+Fill in your Stripe Payment Links:
 
 ```env
-NEXT_PUBLIC_STRIPE_MONDAY_LINK=https://buy.stripe.com/your-monday-link
-NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK=https://buy.stripe.com/your-wednesday-link
+NEXT_PUBLIC_STRIPE_MONDAY_LINK=https://buy.stripe.com/your-group-1-link
+NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK=https://buy.stripe.com/your-group-2-link
 ```
 
 ## Scripts
@@ -89,7 +89,7 @@ npm start
 # Lint code
 npm run lint
 
-# Format code met Prettier
+# Format code with Prettier
 npm run format
 
 # Run E2E tests
@@ -102,23 +102,23 @@ npm run test:e2e:headed
 npm run test:e2e:ui
 ```
 
-## Project Structuur
+## Project Structure
 
 ```
 zwem.coach/
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx          # Root layout met fonts & analytics
+│   │   ├── layout.tsx          # Root layout with fonts & analytics
 │   │   ├── page.tsx             # Homepage
 │   │   └── globals.css          # Global styles
 │   └── components/
-│       ├── CTAButton.tsx        # CTA button met modal
-│       ├── HeroSection.tsx      # Hero sectie
-│       ├── ProgramSection.tsx   # Programma info
+│       ├── CTAButton.tsx        # CTA button with modal
+│       ├── HeroSection.tsx      # Hero section
+│       ├── ProgramSection.tsx   # Program information
 │       ├── CoachesSection.tsx   # Coaches bios
-│       ├── ScheduleSection.tsx  # Data, tijden & locatie
-│       ├── PricingSection.tsx   # Prijs & benodigdheden
-│       └── Footer.tsx           # Footer met contact
+│       ├── ScheduleSection.tsx  # Dates, times & location
+│       ├── PricingSection.tsx   # Pricing & requirements
+│       └── Footer.tsx           # Footer with contact info
 ├── tests/
 │   └── homepage.spec.ts         # E2E tests
 ├── public/                      # Static assets
@@ -130,13 +130,13 @@ zwem.coach/
 
 ## Deployment
 
-### Vercel (Aanbevolen)
+### Vercel (Recommended)
 
-1. Push je code naar GitHub
+1. Push your code to GitHub
 
-2. Ga naar [Vercel](https://vercel.com) en import je repository
+2. Go to [Vercel](https://vercel.com) and import your repository
 
-3. Configureer environment variables in Vercel dashboard:
+3. Configure environment variables in Vercel dashboard:
    - `NEXT_PUBLIC_STRIPE_MONDAY_LINK`
    - `NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK`
 
@@ -144,14 +144,14 @@ zwem.coach/
 
 ## Testing
 
-De website bevat uitgebreide E2E tests voor:
+The website includes comprehensive E2E tests for:
 
-- ✅ Hero sectie en CTA functionaliteit
-- ✅ Alle content secties zichtbaar
-- ✅ Modal voor groepsselectie
-- ✅ Responsive design op mobiel
-- ✅ Contact informatie
-- ✅ Metadata en SEO
+- ✅ Hero section and CTA functionality
+- ✅ All content sections visibility
+- ✅ Modal for group selection
+- ✅ Responsive design on mobile
+- ✅ Contact information
+- ✅ Metadata and SEO
 
 Run tests:
 
@@ -161,37 +161,37 @@ npm run test:e2e
 
 ## Styling & Design
 
-Het project gebruikt een ocean/athletic theme consistent met pellegrims.coach:
+The project uses an ocean/athletic theme:
 
 - **Primary Color:** Deep ocean blue (#0369a1)
 - **Secondary Color:** Coastal blue (#0ea5e9)
 - **Accent Color:** Bright cyan (#06b6d4)
 - **Fonts:** Inter (body), Poppins (headings)
-- **Animations:** Framer Motion voor smooth transitions
+- **Animations:** Framer Motion for smooth transitions
 
 ## Browser Support
 
-- Chrome/Edge (laatste 2 versies)
-- Firefox (laatste 2 versies)
-- Safari (laatste 2 versies)
+- Chrome/Edge (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## Performance
 
 - ⚡ Lighthouse Score: 95+
 - 📦 Optimized bundle size
-- 🖼️ Image optimization met Next.js
-- 🚀 Fast page loads met Vercel Edge Network
+- 🖼️ Image optimization with Next.js
+- 🚀 Fast page loads with Vercel Edge Network
 
 ## Support & Contact
 
-Voor vragen of problemen met de website:
+For questions or issues:
 
-- Email: info@zwem.coach
+- Email: your-email@example.com
 - Repository Issues: [GitHub Issues](link-to-issues)
 
 ## License
 
-Copyright (c) 2025 ZWEM.COACH
+Copyright (c) 2025
 
 Licensed under the MIT License - see LICENSE file for details
