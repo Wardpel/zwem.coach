@@ -54,7 +54,7 @@ test.describe('ZWEM.COACH Homepage', () => {
   })
 
   test('should display program information correctly', async ({ page }) => {
-    await expect(page.getByText(/Volwassenen vanaf 15 jaar/i)).toBeVisible()
+    await expect(page.getByText(/15 jaar en ouder/i)).toBeVisible()
     await expect(
       page.getByText(/Maximaal 15 personen per groep/i)
     ).toBeVisible()

@@ -7,7 +7,7 @@ export default function ProgramSection() {
     {
       icon: '👥',
       title: 'Doelgroep',
-      description: 'Volwassenen vanaf 15 jaar',
+      description: '15 jaar en ouder',
     },
     {
       icon: '📊',
