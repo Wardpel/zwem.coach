@@ -135,7 +135,7 @@ export default function CoachesSection() {
                   <p>
                     Ervaring op hoogste niveau van het zwemmen maar ook in de
                     totaalbegeleiding van agegroup triatleten en beginnende
-                    zwemmers maakt dat ik de ideale coach ben om in het zwembad
+                    zwemmers maakt van Ward de ideale coach om in het zwembad
                     mee aan de slag te gaan. Ward's aanpak combineert
                     wetenschappelijke kennis met jarenlange praktijkervaring aan
                     de wereldtop.
