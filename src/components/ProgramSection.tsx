@@ -18,7 +18,7 @@ export default function ProgramSection() {
     {
       icon: '👨‍👩‍👧‍👦',
       title: 'Kleine Groepen',
-      description: 'Maximaal 15 personen per groep voor persoonlijke aandacht',
+      description: 'Maximaal 15 personen per groep waardoor individuele bijsturing mogelijk blijft',
     },
   ]
 
