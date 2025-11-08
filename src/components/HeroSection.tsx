@@ -65,7 +65,12 @@ export default function HeroSection() {
           </>
         ) : (
           /* Fallback: Decorative background elements */
-          <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="absolute inset-0"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-ocean-50 to-ocean-100"></div>
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-20 left-10 w-72 h-72 bg-ocean-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
@@ -78,9 +83,9 @@ export default function HeroSection() {
                 style={{ animationDelay: '4s' }}
               ></div>
             </div>
-            {/* Dark overlay for text readability - lighter than video overlay */}
-            <div className="absolute inset-0 bg-black/20"></div>
-          </>
+            {/* Darker overlay for better text readability with light background */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </motion.div>
         )}
       </div>
 
