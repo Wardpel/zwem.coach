@@ -29,15 +29,15 @@ export default function CoachesSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid md:grid-cols-2 gap-8 items-center"
+            className="grid md:grid-cols-2 gap-12 items-center"
           >
-            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-8 backdrop-blur-sm bg-opacity-50 flex items-center justify-center">
-              <div className="relative w-full max-w-md aspect-square">
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/pieter.jpg"
                   alt="Pieter Timmers - Olympisch zilvermedaillewinnaar"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -99,7 +99,7 @@ export default function CoachesSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid md:grid-cols-2 gap-8 items-center"
+            className="grid md:grid-cols-2 gap-12 items-center"
           >
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-display font-bold text-athletic-primary mb-4">
@@ -156,14 +156,15 @@ export default function CoachesSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-8 backdrop-blur-sm bg-opacity-50 order-1 md:order-2 flex items-center justify-center">
-              <div className="relative w-full max-w-md aspect-square">
+            <div className="relative order-1 md:order-2">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/ward.jpeg"
                   alt="Ward Pellegrims - Olympisch Coach"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
                 />
               </div>
             </div>
