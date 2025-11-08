@@ -31,11 +31,16 @@ export default function CoachesSection() {
             transition={{ duration: 0.6 }}
             className="grid md:grid-cols-2 gap-8 items-center"
           >
-            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-12 backdrop-blur-sm bg-opacity-50">
-              <div className="text-6xl mb-4">🥈</div>
-              <p className="text-gray-600 italic">
-                Foto placeholder - Pieter Timmers
-              </p>
+            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-8 backdrop-blur-sm bg-opacity-50 flex items-center justify-center">
+              <div className="relative w-full max-w-md aspect-square">
+                <Image
+                  src="/pieter.jpg"
+                  alt="Pieter Timmers - Olympisch zilvermedaillewinnaar"
+                  fill
+                  className="object-cover rounded-xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
 
             <div>
@@ -154,8 +159,8 @@ export default function CoachesSection() {
             <div className="bg-gradient-sky rounded-2xl shadow-ocean p-8 backdrop-blur-sm bg-opacity-50 order-1 md:order-2 flex items-center justify-center">
               <div className="relative w-full max-w-md aspect-square">
                 <Image
-                  src="https://media.licdn.com/dms/image/v2/C4D03AQHYU_8JjDK7FQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1630411099282?e=1764201600&v=beta&t=IRxhuTWxQjS9kuhaQy_Yn8aCbSxkqTc_HUbX7Q9BTFI"
-                  alt="Ward Pellegrims"
+                  src="/ward.jpeg"
+                  alt="Ward Pellegrims - Olympisch Coach"
                   fill
                   className="object-cover rounded-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
