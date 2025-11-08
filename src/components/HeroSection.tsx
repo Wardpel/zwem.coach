@@ -10,7 +10,7 @@ export default function HeroSection() {
   const [showVideo, setShowVideo] = useState(true)
   const [videoLoaded, setVideoLoaded] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const timeoutRef = useRef<NodeJS.Timeout>()
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     // Set a timeout to show fallback if video doesn't load within 5 seconds
