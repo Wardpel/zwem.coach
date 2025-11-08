@@ -1,26 +1,61 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import CTAButton from './CTAButton'
 
 export default function HeroSection() {
   // Replace this URL with your Vercel Blob video URL
   const videoUrl = process.env.NEXT_PUBLIC_HERO_VIDEO_URL || 'https://your-vercel-blob-url.vercel-storage.com/your-video.mp4'
-  const [videoError, setVideoError] = useState(false)
+  const [showVideo, setShowVideo] = useState(true)
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const timeoutRef = useRef<NodeJS.Timeout>()
+
+  useEffect(() => {
+    // Set a timeout to show fallback if video doesn't load within 5 seconds
+    timeoutRef.current = setTimeout(() => {
+      if (!videoLoaded) {
+        setShowVideo(false)
+      }
+    }, 5000)
+
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [videoLoaded])
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true)
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+  }
+
+  const handleVideoError = () => {
+    setShowVideo(false)
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+  }
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Video Background with Fallback */}
       <div className="absolute inset-0 w-full h-full">
-        {!videoError ? (
+        {showVideo ? (
           <>
             <video
+              ref={videoRef}
               autoPlay
               loop
               muted
               playsInline
-              onError={() => setVideoError(true)}
+              onLoadedData={handleVideoLoaded}
+              onCanPlay={handleVideoLoaded}
+              onError={handleVideoError}
               className="absolute inset-0 w-full h-full object-cover"
             >
               <source src={videoUrl} type="video/mp4" />
