@@ -14,7 +14,7 @@ export default function CoachesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-athletic-dark mb-6">
-            De Coaches
+            Coaches
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Train met Olympisch talent en expertise op het hoogste niveau
@@ -130,21 +130,10 @@ export default function CoachesSection() {
 
                 <div className="bg-ocean-50 rounded-lg p-6 mt-6">
                   <h5 className="font-display font-semibold text-athletic-primary mb-3">
-                    Van Elite-begeleiding tot Jouw Persoonlijk Plan
+                    Waarom lessen bij Ward?
                   </h5>
                   <p>
-                    Ward's aanpak combineert wetenschappelijke kennis met
-                    jarenlange praktijkervaring aan de wereldtop. Hij gelooft
-                    niet in een 'one-size-fits-all' methode, maar in de kracht
-                    van data, technische perfectie en een uiterst
-                    gepersonaliseerd trainingsschema.
-                  </p>
-                  <p className="mt-3">
-                    Of je nu traint voor je eerste triatlon, je zwemtechniek
-                    (crawl) wil verfijnen, of op zoek bent naar een online coach
-                    die je prestaties in het fietsen, lopen en zwemmen
-                    structureel verbetert, Ward brengt de lessen van Olympisch
-                    niveau naar jouw training.
+                    Ervaring op hoogste niveau van het zwemmen maar ook in de totaalbegeleiding van agegroup triatleten en beginnende zwemmers maakt dat ik de ideale coach ben om in het zwembad mee aan de slag te gaan.
                   </p>
                 </div>
               </div>

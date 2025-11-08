@@ -32,7 +32,7 @@ test.describe('ZWEM.COACH Homepage', () => {
 
     // Coaches section
     await expect(
-      page.getByRole('heading', { name: /De Coaches/i })
+      page.getByRole('heading', { name: /Coaches/i })
     ).toBeVisible()
     await expect(
       page.getByRole('heading', { name: /Pieter Timmers/i })
