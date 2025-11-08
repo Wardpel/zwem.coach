@@ -133,7 +133,19 @@ export default function CoachesSection() {
                     Waarom lessen bij Ward?
                   </h5>
                   <p>
-                    Ervaring op hoogste niveau van het zwemmen maar ook in de totaalbegeleiding van agegroup triatleten en beginnende zwemmers maakt dat ik de ideale coach ben om in het zwembad mee aan de slag te gaan.
+                    Ervaring op hoogste niveau van het zwemmen maar ook in de
+                    totaalbegeleiding van agegroup triatleten en beginnende
+                    zwemmers maakt dat ik de ideale coach ben om in het zwembad
+                    mee aan de slag te gaan. Ward's aanpak combineert
+                    wetenschappelijke kennis met jarenlange praktijkervaring aan
+                    de wereldtop.
+                  </p>
+                  <p className="mt-3">
+                    Of je nu je zwemtechniek (crawl) wil leren of verfijnen, of
+                    traint voor je eerste triatlon, Ward brengt de lessen van
+                    Olympisch niveau naar jouw training. Hij gelooft niet in een
+                    'one-size-fits-all' methode, maar in de kracht van
+                    technische perfectie en een gepersonaliseerd trainingsschema.
                   </p>
                 </div>
               </div>
