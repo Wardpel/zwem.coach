@@ -1,27 +1,52 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import CTAButton from './CTAButton'
 
 export default function HeroSection() {
   // Replace this URL with your Vercel Blob video URL
   const videoUrl = process.env.NEXT_PUBLIC_HERO_VIDEO_URL || 'https://your-vercel-blob-url.vercel-storage.com/your-video.mp4'
+  const [videoError, setVideoError] = useState(false)
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Video Background */}
+      {/* Video Background with Fallback */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src={videoUrl} type="video/mp4" />
-        </video>
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {!videoError ? (
+          <>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              onError={() => setVideoError(true)}
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+            {/* Dark overlay for better text readability */}
+            <div className="absolute inset-0 bg-black/40"></div>
+          </>
+        ) : (
+          /* Fallback: Decorative background elements */
+          <>
+            <div className="absolute inset-0 bg-gradient-to-br from-ocean-50 to-ocean-100"></div>
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-20 left-10 w-72 h-72 bg-ocean-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
+              <div
+                className="absolute top-40 right-10 w-72 h-72 bg-athletic-accent rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"
+                style={{ animationDelay: '2s' }}
+              ></div>
+              <div
+                className="absolute -bottom-8 left-1/2 w-72 h-72 bg-ocean-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"
+                style={{ animationDelay: '4s' }}
+              ></div>
+            </div>
+            {/* Dark overlay for text readability - lighter than video overlay */}
+            <div className="absolute inset-0 bg-black/20"></div>
+          </>
+        )}
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
