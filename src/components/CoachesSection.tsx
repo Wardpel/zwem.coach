@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function CoachesSection() {
   return (
@@ -150,11 +151,16 @@ export default function CoachesSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-12 backdrop-blur-sm bg-opacity-50 order-1 md:order-2">
-              <div className="text-6xl mb-4">🏆</div>
-              <p className="text-gray-600 italic">
-                Foto placeholder - Ward Pellegrims
-              </p>
+            <div className="bg-gradient-sky rounded-2xl shadow-ocean p-8 backdrop-blur-sm bg-opacity-50 order-1 md:order-2 flex items-center justify-center">
+              <div className="relative w-full max-w-md aspect-square">
+                <Image
+                  src="https://media.licdn.com/dms/image/v2/C4D03AQHYU_8JjDK7FQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1630411099282?e=1764201600&v=beta&t=IRxhuTWxQjS9kuhaQy_Yn8aCbSxkqTc_HUbX7Q9BTFI"
+                  alt="Ward Pellegrims"
+                  fill
+                  className="object-cover rounded-xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
