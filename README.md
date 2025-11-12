@@ -195,12 +195,7 @@ The project uses an ocean/athletic theme:
 
 ## Support & Contact
 
-For questions or issues about the website:
-
-- **Email:** info@zwem.coach
-- **Company:** Ward Pellegrims CV (zwem.coach)
-- **Address:** Luiaardweg 21, 1850 Grimbergen, Belgium
-- **VAT:** BE 0777.482.318
+For questions or issues about the website, create an issue in this GitHub repository.
 
 ## License
 
