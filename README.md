@@ -148,6 +148,7 @@ zwem.coach/
 3. Configure environment variables in Vercel dashboard:
    - `NEXT_PUBLIC_STRIPE_MONDAY_LINK`
    - `NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK`
+   - `NEXT_PUBLIC_HERO_VIDEO_URL`
 
 4. Deploy!
 
