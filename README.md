@@ -1,20 +1,22 @@
-# Swimming Coaching Landing Page
+# ZWEM.COACH - Start to Crawl Vilvoorde
 
-A modern, one-page landing page for swimming coaching programs, built with Next.js 15, Tailwind CSS, and Stripe integration.
+A modern, professional website for ZWEM.COACH swimming programs in Vilvoorde, Belgium, built with Next.js 15, Tailwind CSS, and Stripe integration.
 
 ## Overview
 
-This project is a professional website template for swimming coaching programs. The website provides information about the program and enables registration through Stripe Payment Links.
+This is the official website for ZWEM.COACH, offering professional crawl swimming lessons and coaching in Vilvoorde, Belgium. The website is designed for Dutch-speaking audiences (nl_BE) and features coaches Pieter Timmers and Ward Pellegrims. The site provides comprehensive program information and enables online registration through Stripe Payment Links.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
+- **Framework:** Next.js 15 (App Router) with Turbopack
+- **React:** React 19
 - **Styling:** Tailwind CSS with ocean/athletic theme
 - **Animations:** Framer Motion
 - **Testing:** Playwright E2E tests
 - **Code Formatting:** Prettier
 - **Analytics:** Vercel Analytics & Speed Insights
 - **Payment:** Stripe Payment Links
+- **Language:** Dutch (nl_BE)
 
 ## Features
 
@@ -25,7 +27,8 @@ This project is a professional website template for swimming coaching programs. 
 - 📱 Fully responsive for all devices
 - 🧪 Comprehensive E2E tests with Playwright
 - ⚡ Optimized for performance and SEO
-- 🌍 Easily customizable content
+- 🌍 Dutch language interface (nl_BE)
+- 📄 Legal pages (Privacy Policy & Terms and Conditions)
 
 ## Installation
 
@@ -77,7 +80,7 @@ NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK=https://buy.stripe.com/your-group-2-link
 ## Scripts
 
 ```bash
-# Development server
+# Development server (with Turbopack)
 npm run dev
 
 # Production build
@@ -108,24 +111,30 @@ npm run test:e2e:ui
 zwem.coach/
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx          # Root layout with fonts & analytics
-│   │   ├── page.tsx             # Homepage
-│   │   └── globals.css          # Global styles
-│   └── components/
-│       ├── CTAButton.tsx        # CTA button with modal
-│       ├── HeroSection.tsx      # Hero section
-│       ├── ProgramSection.tsx   # Program information
-│       ├── CoachesSection.tsx   # Coaches bios
-│       ├── ScheduleSection.tsx  # Dates, times & location
-│       ├── PricingSection.tsx   # Pricing & requirements
-│       └── Footer.tsx           # Footer with contact info
+│   │   ├── layout.tsx                    # Root layout with fonts & analytics
+│   │   ├── page.tsx                      # Homepage
+│   │   ├── globals.css                   # Global styles
+│   │   ├── privacybeleid/
+│   │   │   └── page.tsx                  # Privacy policy page
+│   │   └── algemene-voorwaarden/
+│   │       └── page.tsx                  # Terms and conditions page
+│   ├── components/
+│   │   ├── CTAButton.tsx                 # CTA button with modal
+│   │   ├── HeroSection.tsx               # Hero section
+│   │   ├── ProgramSection.tsx            # Program information
+│   │   ├── CoachesSection.tsx            # Coaches bios
+│   │   ├── ScheduleSection.tsx           # Dates, times & location
+│   │   ├── PricingSection.tsx            # Pricing & requirements
+│   │   └── Footer.tsx                    # Footer with contact info
+│   └── lib/
+│       └── legal-content.ts              # Legal content (terms & privacy)
 ├── tests/
-│   └── homepage.spec.ts         # E2E tests
-├── public/                      # Static assets
-├── tailwind.config.js           # Tailwind configuration
-├── playwright.config.ts         # Playwright configuration
-├── next.config.mjs              # Next.js configuration
-└── package.json                 # Dependencies
+│   └── homepage.spec.ts                  # E2E tests
+├── public/                               # Static assets
+├── tailwind.config.js                    # Tailwind configuration
+├── playwright.config.ts                  # Playwright configuration
+├── next.config.mjs                       # Next.js configuration
+└── package.json                          # Dependencies
 ```
 
 ## Deployment
@@ -152,6 +161,7 @@ The website includes comprehensive E2E tests for:
 - ✅ Responsive design on mobile
 - ✅ Contact information
 - ✅ Metadata and SEO
+- ✅ Legal pages (Privacy Policy & Terms)
 
 Run tests:
 
@@ -166,7 +176,7 @@ The project uses an ocean/athletic theme:
 - **Primary Color:** Deep ocean blue (#0369a1)
 - **Secondary Color:** Coastal blue (#0ea5e9)
 - **Accent Color:** Bright cyan (#06b6d4)
-- **Fonts:** Inter (body), Poppins (headings)
+- **Fonts:** Inter (body text), Poppins (headings), Jua (hero branding)
 - **Animations:** Framer Motion for smooth transitions
 
 ## Browser Support
@@ -185,12 +195,15 @@ The project uses an ocean/athletic theme:
 
 ## Support & Contact
 
-For questions or issues:
+For questions or issues about the website:
 
-- Repository Issues: [GitHub Issues](link-to-issues)
+- **Email:** info@zwem.coach
+- **Company:** Ward Pellegrims CV (ZWEM.COACH)
+- **Address:** Luiaardweg 21, 1850 Grimbergen, Belgium
+- **VAT:** BE 0777.482.318
 
 ## License
 
-Copyright (c) 2025
+Copyright (c) 2025 ZWEM.COACH (Ward Pellegrims CV)
 
-Licensed under the MIT License - see LICENSE file for details
+All rights reserved.
