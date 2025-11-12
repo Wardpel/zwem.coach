@@ -70,7 +70,7 @@ Copy `.env.example` to `.env.local`:
 cp .env.example .env.local
 ```
 
-Fill in your Stripe Payment Links:
+Fill in your Stripe Payment Links and video url:
 
 ```env
 NEXT_PUBLIC_STRIPE_MONDAY_LINK=https://buy.stripe.com/your-group-1-link
