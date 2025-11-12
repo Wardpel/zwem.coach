@@ -1,10 +1,10 @@
-# ZWEM.COACH - Start to Crawl Vilvoorde
+# zwem.coach - Start to Crawl Vilvoorde
 
-A modern, professional website for ZWEM.COACH swimming programs in Vilvoorde, Belgium, built with Next.js 15, Tailwind CSS, and Stripe integration.
+A modern, professional website for zwem.coach swimming programs in Vilvoorde, Belgium, built with Next.js 15, Tailwind CSS, and Stripe integration.
 
 ## Overview
 
-This is the official website for ZWEM.COACH, offering professional crawl swimming lessons and coaching in Vilvoorde, Belgium. The website is designed for Dutch-speaking audiences (nl_BE) and features coaches Pieter Timmers and Ward Pellegrims. The site provides comprehensive program information and enables online registration through Stripe Payment Links.
+This is the official website for zwem.coach, offering professional crawl swimming lessons and coaching in Vilvoorde, Belgium. The website is designed for Dutch-speaking audiences (nl_BE) and features coaches Pieter Timmers and Ward Pellegrims. The site provides comprehensive program information and enables online registration through Stripe Payment Links.
 
 ## Tech Stack
 
@@ -198,12 +198,12 @@ The project uses an ocean/athletic theme:
 For questions or issues about the website:
 
 - **Email:** info@zwem.coach
-- **Company:** Ward Pellegrims CV (ZWEM.COACH)
+- **Company:** Ward Pellegrims CV (zwem.coach)
 - **Address:** Luiaardweg 21, 1850 Grimbergen, Belgium
 - **VAT:** BE 0777.482.318
 
 ## License
 
-Copyright (c) 2025 ZWEM.COACH (Ward Pellegrims CV)
+Copyright (c) 2025 zwem.coach (Ward Pellegrims CV)
 
 All rights reserved.
