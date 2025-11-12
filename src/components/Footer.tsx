@@ -67,10 +67,21 @@ export default function Footer() {
           </div>
 
           <div className="mt-8 pt-8 border-t border-gray-700 text-center md:text-left text-sm text-gray-500 md:flex md:items-center md:justify-between md:gap-6">
-            <span className="block md:inline">
-              © {new Date().getFullYear()} ZWEM.COACH - Alle rechten
-              voorbehouden
-            </span>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <span className="block md:inline">
+                © {new Date().getFullYear()} ZWEM.COACH - Alle rechten
+                voorbehouden
+              </span>
+              <span className="hidden md:inline text-gray-600">•</span>
+              <a
+                href="https://www.cotersus.be/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Website door Cotersus
+              </a>
+            </div>
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 mt-2 md:mt-0">
               <a
                 href="/algemene-voorwaarden"
@@ -84,15 +95,6 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Privacyverklaring
-              </a>
-              <span className="hidden md:inline text-gray-600">•</span>
-              <a
-                href="https://www.cotersus.be/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                Website door Cotersus
               </a>
             </div>
           </div>
