@@ -73,14 +73,17 @@ export default function Footer() {
                 voorbehouden
               </span>
               <span className="hidden md:inline text-gray-600">•</span>
-              <a
-                href="https://www.cotersus.be/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                Website door Cotersus
-              </a>
+              <span>
+                Website door{' '}
+                <a
+                  href="https://www.cotersus.be/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Cotersus
+                </a>
+              </span>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 mt-2 md:mt-0">
               <a
