@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { legalContent } from '@/lib/legal-content'
-import { getFullUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
+import { getFullUrl, getOgImageUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const privacy = legalContent.privacyPolicy
 const pageUrl = getFullUrl('/privacybeleid')
+const ogImageUrl = getOgImageUrl()
 
 export const metadata: Metadata = {
   title: privacy.meta.title,
@@ -16,11 +17,20 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: SITE_LOCALE,
     type: 'website',
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: privacy.meta.title,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: privacy.meta.title,
     description: privacy.meta.description,
+    images: [ogImageUrl],
   },
   alternates: {
     canonical: pageUrl,

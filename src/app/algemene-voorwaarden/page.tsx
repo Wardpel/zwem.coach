@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { legalContent } from '@/lib/legal-content'
-import { getFullUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
+import { getFullUrl, getOgImageUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const txt = legalContent.generalTerms
 const pageUrl = getFullUrl('/algemene-voorwaarden')
+const ogImageUrl = getOgImageUrl()
 
 export const metadata: Metadata = {
   title: txt.meta.title,
@@ -16,11 +17,20 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: SITE_LOCALE,
     type: 'website',
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: txt.meta.title,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: txt.meta.title,
     description: txt.meta.description,
+    images: [ogImageUrl],
   },
   alternates: {
     canonical: pageUrl,

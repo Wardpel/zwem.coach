@@ -3,7 +3,7 @@ import { Inter, Poppins, Jua } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { getSiteUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
+import { getSiteUrl, getOgImageUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +26,7 @@ const jua = Jua({
 })
 
 const siteUrl = getSiteUrl()
+const ogImageUrl = getOgImageUrl()
 
 export const metadata: Metadata = {
   title: 'zwem.coach | Start to Crawl Vilvoorde',
@@ -53,6 +54,21 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     type: 'website',
     locale: SITE_LOCALE,
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: 'zwem.coach - Start to Crawl Vilvoorde',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'zwem.coach | Start to Crawl Vilvoorde',
+    description:
+      'Leer crawl zwemmen of verbeter je techniek onder deskundige begeleiding van Pieter Timmers en Ward Pellegrims.',
+    images: [ogImageUrl],
   },
   alternates: {
     canonical: siteUrl,

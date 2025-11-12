@@ -32,6 +32,20 @@ export function getFullUrl(path: string): string {
 }
 
 /**
+ * Get the OpenGraph image URL
+ * Returns the full URL to the OG image for social media sharing
+ */
+export function getOgImageUrl(): string {
+  // Use custom OG image if specified
+  if (process.env.NEXT_PUBLIC_OG_IMAGE_URL) {
+    return process.env.NEXT_PUBLIC_OG_IMAGE_URL
+  }
+
+  // Default to og-image.jpg in public folder
+  return getFullUrl('/og-image.jpg')
+}
+
+/**
  * Site metadata constants
  */
 export const SITE_NAME = 'zwem.coach'
