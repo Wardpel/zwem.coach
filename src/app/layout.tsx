@@ -3,6 +3,7 @@ import { Inter, Poppins, Jua } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { getSiteUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,8 +25,10 @@ const jua = Jua({
   display: 'swap',
 })
 
+const siteUrl = getSiteUrl()
+
 export const metadata: Metadata = {
-  title: 'ZWEM.COACH | Start to Crawl Vilvoorde',
+  title: 'zwem.coach | Start to Crawl Vilvoorde',
   description:
     'Leer crawl zwemmen of verbeter je techniek onder deskundige begeleiding van Pieter Timmers en Ward Pellegrims in Vilvoorde. 10 wekelijkse sessies voor alle niveaus.',
   keywords: [
@@ -38,16 +41,21 @@ export const metadata: Metadata = {
     'zwemcoach',
     'triatlon',
   ],
-  authors: [{ name: 'ZWEM.COACH' }],
+  authors: [{ name: SITE_NAME }],
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: 'ZWEM.COACH | Start to Crawl Vilvoorde',
+    title: 'zwem.coach | Start to Crawl Vilvoorde',
     description:
       'Leer crawl zwemmen of verbeter je techniek onder deskundige begeleiding van Pieter Timmers en Ward Pellegrims.',
+    url: siteUrl,
+    siteName: SITE_NAME,
     type: 'website',
-    locale: 'nl_BE',
+    locale: SITE_LOCALE,
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 }
 

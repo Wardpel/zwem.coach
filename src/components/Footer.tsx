@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <h3 className="font-display font-semibold text-xl mb-3">
-                ZWEM.COACH
+                zwem.coach
               </h3>
               <p className="text-gray-400 text-sm">Start to Crawl Vilvoorde</p>
             </div>
@@ -105,7 +105,7 @@ export default function Footer() {
           <div className="mt-8 pt-8 border-t border-gray-700 text-center md:text-left text-sm text-gray-500 md:flex md:items-center md:justify-between md:gap-6">
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
               <span className="block md:inline">
-                © {new Date().getFullYear()} ZWEM.COACH - Alle rechten
+                © {new Date().getFullYear()} zwem.coach - Alle rechten
                 voorbehouden
               </span>
               <span className="hidden md:inline text-gray-600">•</span>

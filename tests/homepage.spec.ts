@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.describe('ZWEM.COACH Homepage', () => {
+test.describe('zwem.coach Homepage', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
   })
@@ -9,7 +9,7 @@ test.describe('ZWEM.COACH Homepage', () => {
     page,
   }) => {
     await expect(
-      page.getByRole('heading', { name: /ZWEM.COACH/i }).first()
+      page.getByRole('heading', { name: /zwem\.coach/i }).first()
     ).toBeVisible()
     await expect(
       page.getByText(/Start to Crawl Vilvoorde/i).first()
@@ -108,7 +108,7 @@ test.describe('ZWEM.COACH Homepage', () => {
 
     // Check if main elements are still visible
     await expect(
-      page.getByRole('heading', { name: /ZWEM.COACH/i }).first()
+      page.getByRole('heading', { name: /zwem\.coach/i }).first()
     ).toBeVisible()
     await expect(
       page.getByRole('button', { name: /Inschrijven/i }).first()
@@ -116,6 +116,6 @@ test.describe('ZWEM.COACH Homepage', () => {
   })
 
   test('should have proper metadata', async ({ page }) => {
-    await expect(page).toHaveTitle(/ZWEM.COACH/)
+    await expect(page).toHaveTitle(/zwem\.coach/)
   })
 })

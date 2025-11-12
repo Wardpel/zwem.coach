@@ -80,7 +80,7 @@ export default function CoachesSection() {
                     Waarom lessen bij Pieter?
                   </h5>
                   <p>
-                    Bij ZWEM.COACH krijg je niet zomaar zwemles; je leert van
+                    Bij zwem.coach krijg je niet zomaar zwemles; je leert van
                     een olympiër. Pieter vertaalt de complexe technieken van de
                     topsport naar haalbare doelen voor elk niveau. Of je nu je
                     crawl wilt perfectioneren, efficiënter wilt leren zwemmen of

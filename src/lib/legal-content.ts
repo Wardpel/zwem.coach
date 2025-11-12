@@ -2,28 +2,28 @@ export const legalContent = {
   // Algemene Voorwaarden
   generalTerms: {
     meta: {
-      title: 'Algemene Voorwaarden | ZWEM.COACH',
+      title: 'Algemene Voorwaarden | zwem.coach',
       description:
-        'Juridische voorwaarden van ZWEM.COACH voor zwemlessen en crawltraining in Vilvoorde, België.',
+        'Juridische voorwaarden van zwem.coach voor zwemlessen en crawltraining in Vilvoorde, België.',
     },
     title: 'Algemene Voorwaarden',
     lastUpdated: 'Laatst bijgewerkt: 5 november 2025',
     intro:
-      'Deze algemene voorwaarden (de "Voorwaarden") regelen elk aanbod, elke inschrijving en elke overeenkomst voor zwemlessen, crawltraining en aanverwante diensten die door ZWEM.COACH worden aangeboden. Door een dienst te boeken, online of via e-mail in te schrijven of een overeenkomst te ondertekenen, bevestig je dat je deze Voorwaarden hebt gelezen en aanvaard.',
+      'Deze algemene voorwaarden (de "Voorwaarden") regelen elk aanbod, elke inschrijving en elke overeenkomst voor zwemlessen, crawltraining en aanverwante diensten die door zwem.coach worden aangeboden. Door een dienst te boeken, online of via e-mail in te schrijven of een overeenkomst te ondertekenen, bevestig je dat je deze Voorwaarden hebt gelezen en aanvaard.',
     sections: [
       {
         id: 'scope',
         title: '1. Toepassingsgebied en partijen',
         paragraphs: [
-          'De Voorwaarden zijn van toepassing op alle diensten die Ward Pellegrims CV aanbiedt onder de merknaam ZWEM.COACH, een commanditaire vennootschap naar Belgisch recht. Afwijkingen zijn enkel geldig indien ze uitdrukkelijk en schriftelijk werden overeengekomen.',
-          'In deze Voorwaarden verwijzen "wij", "we" of "ons" naar ZWEM.COACH (Ward Pellegrims CV) en verwijst "je" of "jij" naar de natuurlijke persoon of rechtspersoon die onze diensten aankoopt of eraan deelneemt.',
+          'De Voorwaarden zijn van toepassing op alle diensten die Ward Pellegrims CV aanbiedt onder de merknaam zwem.coach, een commanditaire vennootschap naar Belgisch recht. Afwijkingen zijn enkel geldig indien ze uitdrukkelijk en schriftelijk werden overeengekomen.',
+          'In deze Voorwaarden verwijzen "wij", "we" of "ons" naar zwem.coach (Ward Pellegrims CV) en verwijst "je" of "jij" naar de natuurlijke persoon of rechtspersoon die onze diensten aankoopt of eraan deelneemt.',
         ],
       },
       {
         id: 'identification',
         title: '2. Identificatie van de onderneming',
         paragraphs: [
-          'Ward Pellegrims CV, handelend onder de merknaam ZWEM.COACH, Luiaardweg 21, 1850 Grimbergen, België.',
+          'Ward Pellegrims CV, handelend onder de merknaam zwem.coach, Luiaardweg 21, 1850 Grimbergen, België.',
           'BTW-nummer: BE 0777.482.318 (ingeschreven in de Kruispuntbank van Ondernemingen - KBO nummer 0777.482.318).',
           'E-mail: info@zwem.coach',
         ],
@@ -138,7 +138,7 @@ export const legalContent = {
     contact: {
       title: 'Vragen of klachten?',
       description:
-        'Neem contact op met ZWEM.COACH voor bijkomende informatie of om je consumentenrechten uit te oefenen. We beantwoorden je bericht binnen twee werkdagen.',
+        'Neem contact op met zwem.coach voor bijkomende informatie of om je consumentenrechten uit te oefenen. We beantwoorden je bericht binnen twee werkdagen.',
       emailLabel: 'E-mail',
       emailValue: 'info@zwem.coach',
       addressLabel: 'Maatschappelijke zetel',
@@ -153,9 +153,9 @@ export const legalContent = {
   // Privacyverklaring
   privacyPolicy: {
     meta: {
-      title: 'Privacyverklaring | ZWEM.COACH',
+      title: 'Privacyverklaring | zwem.coach',
       description:
-        'Ontdek hoe ZWEM.COACH persoonsgegevens verwerkt die via de website en Stripe-betalingen worden verzameld, volledig in lijn met de GDPR.',
+        'Ontdek hoe zwem.coach persoonsgegevens verwerkt die via de website en Stripe-betalingen worden verzameld, volledig in lijn met de GDPR.',
     },
     title: 'Privacyverklaring',
     lastUpdated: 'Laatst bijgewerkt: 5 november 2025',
@@ -164,7 +164,7 @@ export const legalContent = {
     controller: {
       title: 'Verantwoordelijke voor de verwerking',
       paragraphs: [
-        'Ward Pellegrims CV, handelend onder de merknaam ZWEM.COACH, Luiaardweg 21, 1850 Grimbergen, België (commanditaire vennootschap, BTW BE0777.482.318), is verantwoordelijk voor de verwerking van persoonsgegevens op deze website.',
+        'Ward Pellegrims CV, handelend onder de merknaam zwem.coach, Luiaardweg 21, 1850 Grimbergen, België (commanditaire vennootschap, BTW BE0777.482.318), is verantwoordelijk voor de verwerking van persoonsgegevens op deze website.',
         'Voor privacyvragen kan u ons bereiken per e-mail op info@zwem.coach.',
       ],
     },

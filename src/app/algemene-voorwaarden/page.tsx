@@ -1,18 +1,20 @@
 import type { Metadata } from 'next'
 import { legalContent } from '@/lib/legal-content'
+import { getFullUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const txt = legalContent.generalTerms
+const pageUrl = getFullUrl('/algemene-voorwaarden')
 
 export const metadata: Metadata = {
   title: txt.meta.title,
   description: txt.meta.description,
-  authors: [{ name: 'ZWEM.COACH' }],
+  authors: [{ name: SITE_NAME }],
   openGraph: {
     title: txt.meta.title,
     description: txt.meta.description,
-    url: 'https://www.zwem.coach/algemene-voorwaarden',
-    siteName: 'ZWEM.COACH',
-    locale: 'nl_BE',
+    url: pageUrl,
+    siteName: SITE_NAME,
+    locale: SITE_LOCALE,
     type: 'website',
   },
   twitter: {
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     description: txt.meta.description,
   },
   alternates: {
-    canonical: 'https://www.zwem.coach/algemene-voorwaarden',
+    canonical: pageUrl,
   },
 }
 

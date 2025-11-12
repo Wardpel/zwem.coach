@@ -1,18 +1,20 @@
 import type { Metadata } from 'next'
 import { legalContent } from '@/lib/legal-content'
+import { getFullUrl, SITE_NAME, SITE_LOCALE } from '@/lib/site-config'
 
 const privacy = legalContent.privacyPolicy
+const pageUrl = getFullUrl('/privacybeleid')
 
 export const metadata: Metadata = {
   title: privacy.meta.title,
   description: privacy.meta.description,
-  authors: [{ name: 'ZWEM.COACH' }],
+  authors: [{ name: SITE_NAME }],
   openGraph: {
     title: privacy.meta.title,
     description: privacy.meta.description,
-    url: 'https://www.zwem.coach/privacybeleid',
-    siteName: 'ZWEM.COACH',
-    locale: 'nl_BE',
+    url: pageUrl,
+    siteName: SITE_NAME,
+    locale: SITE_LOCALE,
     type: 'website',
   },
   twitter: {
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     description: privacy.meta.description,
   },
   alternates: {
-    canonical: 'https://www.zwem.coach/privacybeleid',
+    canonical: pageUrl,
   },
 }
 
