@@ -85,6 +85,15 @@ export default function Footer() {
               >
                 Privacyverklaring
               </a>
+              <span className="hidden md:inline text-gray-600">•</span>
+              <a
+                href="https://www.cotersus.be/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                Website door Cotersus
+              </a>
             </div>
           </div>
         </motion.div>
