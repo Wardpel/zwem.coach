@@ -75,6 +75,7 @@ Fill in your Stripe Payment Links:
 ```env
 NEXT_PUBLIC_STRIPE_MONDAY_LINK=https://buy.stripe.com/your-group-1-link
 NEXT_PUBLIC_STRIPE_WEDNESDAY_LINK=https://buy.stripe.com/your-group-2-link
+NEXT_PUBLIC_HERO_VIDEO_URL=https://your-vercel-blob-url.vercel-storage.com/your-video.mp4
 ```
 
 ## Scripts
