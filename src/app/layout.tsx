@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Jua } from 'next/font/google'
+import { Inter, Poppins, Jua } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -7,6 +7,13 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
+})
+
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
   display: 'swap',
 })
 
@@ -50,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl" className={`${inter.variable} ${jua.variable}`}>
+    <html lang="nl" className={`${inter.variable} ${poppins.variable} ${jua.variable}`}>
       <body>
         {children}
         <Analytics />

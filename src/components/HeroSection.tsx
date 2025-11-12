@@ -97,7 +97,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 drop-shadow-lg">
-              ZWEM.COACH
+              <span className="font-jua">zwem.coach</span>
               <br />
               <span className="text-athletic-accent">
                 Start to Crawl Vilvoorde
