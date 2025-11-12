@@ -139,7 +139,7 @@ export default function CoachesSection() {
                     Waarom lessen bij Ward?
                   </h5>
                   <p>
-                    Ervaring op hoogste niveau van het zwemmen en ook in de
+                    Ervaring op het hoogste niveau van het zwemmen en ook in de
                     totaalbegeleiding van agegroup triatleten en beginnende
                     zwemmers maakt van Ward de ideale coach om in het zwembad
                     mee aan de slag te gaan. Ward's aanpak combineert
