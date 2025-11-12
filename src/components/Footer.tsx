@@ -78,7 +78,7 @@ export default function Footer() {
                 <a
                   href="https://www.cotersus.be/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer sponsored nofollow"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Cotersus
