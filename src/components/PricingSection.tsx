@@ -5,10 +5,17 @@ import { motion } from 'framer-motion'
 export default function PricingSection() {
   const requiredGear = [
     'Zwembril',
-    'Kleine zwemvinnen (short fins/zoomers)',
+    'Korte zwemvinnen',
     'Snorkel',
     'Pullbuoy',
     'Aansluitende zwemkledij',
+  ]
+
+  const starterPackageGear = [
+    'Zwembril',
+    'Korte zwemvinnen',
+    'Snorkel',
+    'Pullbuoy',
   ]
 
   return (
@@ -45,7 +52,7 @@ export default function PricingSection() {
                   <span className="text-2xl">✓</span> Toegang tot het zwembad
                 </p>
                 <p className="flex items-center justify-center gap-2">
-                  <span className="text-2xl">✓</span> Een badmuts
+                  <span className="text-2xl">✓</span> Badmuts
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <span className="text-2xl">✓</span> Begeleiding door Pieter &
@@ -96,7 +103,7 @@ export default function PricingSection() {
                 inschrijving:
               </p>
               <ul className="space-y-3 mb-6">
-                {requiredGear.map((item, index) => (
+                {starterPackageGear.map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <span className="text-athletic-success mt-1">✓</span>
                     <span className="text-gray-700">{item}</span>
@@ -105,7 +112,7 @@ export default function PricingSection() {
               </ul>
               <div className="bg-white rounded-lg p-4 text-center">
                 <p className="text-3xl font-bold text-athletic-dark mb-1">
-                  €100
+                  €110
                 </p>
                 <p className="text-sm text-gray-600">
                   Bij inschrijving
