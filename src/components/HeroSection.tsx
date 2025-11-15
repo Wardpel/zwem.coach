@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from 'react'
 import CTAButton from './CTAButton'
 
 export default function HeroSection() {
-  // Replace this URL with your Vercel Blob video URL
-  const videoUrl = process.env.NEXT_PUBLIC_HERO_VIDEO_URL || 'https://your-vercel-blob-url.vercel-storage.com/your-video.mp4'
+  const videoMp4Url = process.env.NEXT_PUBLIC_HERO_VIDEO_URL
+  const videoWebmUrl = videoMp4Url?.replace('.mp4', '.webm')
   const [showVideo, setShowVideo] = useState(true)
   const [videoLoaded, setVideoLoaded] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -58,7 +58,8 @@ export default function HeroSection() {
               onError={handleVideoError}
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src={videoUrl} type="video/mp4" />
+              {videoWebmUrl && <source src={videoWebmUrl} type="video/webm" />}
+              {videoMp4Url && <source src={videoMp4Url} type="video/mp4" />}
             </video>
             {/* Dark overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40"></div>
@@ -97,7 +98,9 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 drop-shadow-lg">
-              <span className="font-jua text-6xl md:text-8xl block mb-4">zwem.coach</span>
+              <span className="font-jua text-6xl md:text-8xl block mb-4">
+                zwem.coach
+              </span>
               <span className="text-athletic-accent">
                 Start to Crawl Vilvoorde
               </span>
