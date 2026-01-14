@@ -23,5 +23,11 @@ export default defineConfig({
     command: 'npm run dev',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
+    env: {
+      NEXT_PUBLIC_STRIPE_MONDAY_2_LINK:
+        'https://buy.stripe.com/your-monday-link',
+      NEXT_PUBLIC_STRIPE_WEDNESDAY_2_LINK:
+        'https://buy.stripe.com/your-wednesday-link',
+    },
   },
 })

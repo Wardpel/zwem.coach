@@ -50,7 +50,7 @@ test.describe('zwem.coach Homepage', () => {
     await expect(
       page.getByRole('heading', { name: /Prijs & Benodigdheden/i })
     ).toBeVisible()
-    await expect(page.getByText(/€240/i)).toBeVisible()
+    await expect(page.getByText(/€280/i)).toBeVisible()
   })
 
   test('should display program information correctly', async ({ page }) => {
